@@ -17,9 +17,6 @@ function variable = createSymbolicMatrix(var_name, n_rows, n_cols,d, is_symmetri
             end
         end
     end
-%     if n_rows == 1
-%         variable = variable{1};
-%     end
     
     if n_rows == 1 && is_not_cell == 1
         variable = randi(9, d,d);
