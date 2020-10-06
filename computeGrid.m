@@ -162,16 +162,3 @@ function [sol_states, optimal_u_per_sub_grid] = computeGrid(n_rows, n_cols, d, l
     
     fprintf('Optimal cost is: %f\n', double(cost));    
 end
-
-
-
-%     sub_cost_grid = cost_grid(n,n);
-%     for i = n : -1 : 1
-%         for j = n : -1 : 1
-%             optimal_u_per_state{i,j} = computeOptimalU(...
-%                 sum(sum([sub_cost_grid{i:n, j:n}])), ...
-%                     u{i,j});
-%         end
-%     end
-
-
